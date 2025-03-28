@@ -1,188 +1,350 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-:root{
-    --primary_color: #FDFBF5;
-    --secondary_color: #191919;
+:root {
+  --primary_color: #fdfbf5;
+  --secondary_color: #191919;
 }
 
-
-html, body{
-    width: 100%;
-    min-height: 100%;
-    font-family: 'Syne','Inter', sans-serif;
-    color:var(--secondary_color) ;
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  font-family: "Syne", "Inter", sans-serif;
+  color: var(--secondary_color);
 }
-p{
-    font-family: 'Satoshi', 'Poppins', sans-serif;
-}
-
-body{
-    background-color: var(--primary_color);
-    padding: 0.8rem;
+p {
+  font-family: "Satoshi", "Poppins", sans-serif;
 }
 
-main{
-    width: 100%;
-    height: 100%;
-    border: 1px solid var(--secondary_color);
-    padding: 1.2rem;
+body {
+  background-color: var(--primary_color);
+  padding: 0.8rem;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--secondary_color);
+  padding: 1.2rem 1.6rem;
 }
 
 /* Navigation Bar */
 
-.top_nav{
-    width: auto;
-    display: flex;
-    align-items: center;
-    gap: 0.8rem;
-}
-.logo{
-    font-weight: 500;
-}
-.divider_top_nav{
-    width: 1rem;
-    height: 0.8px;
-    background-color: var(--secondary_color);
-}
-.My_name{
-    font-size: 0.85rem;
-    opacity: 0.9;
-    font-weight: 400;
-    letter-spacing: 1px;
-    word-spacing: 2px;
-    text-transform: uppercase;
-}
 
-.divider_nav{
-    width: 100%;
-    margin-top: 1rem;
-    padding: 0.4px;
-    background-color: var(--secondary_color);
+.top_nav {
+  width: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
 }
-
-.menu{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 0.8rem;
+.logo {
+  font-weight: 500;
 }
-.menu>a{
-    color: var(--secondary_color);
-    text-decoration: none;
+.divider_top_nav {
+  width: 1rem;
+  height: 0.8px;
+  background-color: var(--secondary_color);
+}
+.My_name {
+  font-size: 0.85rem;
+  opacity: 0.9;
+  font-weight: 400;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  text-transform: uppercase;
+}
+.divider_nav {
+  width: 100%;
+  padding: 0.4px;
+  background-color: var(--secondary_color);
+}
+.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+.menu > a {
+  color: var(--secondary_color);
+  text-decoration: none;
 }
 
 /* Hero Section */
-.hero{
-    margin-top: 5rem;
+.hero {
+  margin-top: 5rem;
 }
-.hero h1{
-    font-size: 3rem;
-    font-weight: 500;
-    line-height: 3rem;
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 3rem;
 }
-.hero p{
-    margin-top: 1rem;
-    font-size: 1.2rem;
-    font-weight: 400;
+.hero p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+.hero video {
+  width: 100%;
+  height: 100%;
+  margin: 2rem 0;
+  border-radius: 20px;
 }
 
-.hero video{
-    width: 100%;
-    height: 100%;
-    margin: 2rem 0;
-    border-radius: 20px;
+/* Our Services */
+
+.Our_Services {
+  width: 100%;
+  margin-top: 2rem;
+}
+.Our_Services h3 {
+  font-family: "Roboto Mono", monospace;
+  font-size: 01rem;
+  font-weight: 400;
+  letter-spacing: -0.01rem;
+  word-spacing: -0.3rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+.hori_divi {
+  display: none;
+}
+.marquee {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0rem;
+  overflow: hidden;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.images {
+  display: flex;
+  align-items: center;
+  gap: 0rem;
+  transform: translateX(-500px);
+  animation: marquee 10s linear infinite both;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.marquee img {
+  width: 5rem;
+  margin: 0 2rem;
+  object-fit: contain;
+}
+.divider_nav_dark {
+  width: 100%;
+
+  height: 2px;
+  background-color: var(--secondary_color);
 }
 
-
-
-
-
+/* What we do */
+.what_we_do h3 {
+  display: none;
+}
+.branding img {
+  margin-top: 2rem;
+  width: 3rem;
+  rotate: 45deg;
+}
+.what_we_do h1 {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.what_we_do p {
+  font-weight: 300;
+  font-size: 0.95rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.03rem;
+  line-height: 1.5rem;
+  opacity: 0.9;
+}
+.design img {
+  margin-top: 2rem;
+  width: 3.6rem;
+  rotate: 135deg;
+}
+.branding1 img {
+  margin-top: 2rem;
+  width: 3.8rem;
+}
+.design1 img {
+  margin-top: 2rem;
+  width: 4rem;
+}
 
 /* For Tablet */
 
-@media screen and (min-width:768px) {
-    body{
-        padding: 0.8rem;
-    }
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0.8rem;
+  }
 
-    /* Navigation Bar */
-    .navigation{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    .navigation .divider_nav{
-        display: none;
-    }
-    .My_name{
-        font-size: 0.9rem;
-        opacity: 0.9;
-        font-weight: 500;
-    }
-    .menu{
-        margin-top: 0;
-        gap: 1.5rem;
-    }
+  /* Navigation Bar */
+  .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0;
+  }
+  .navigation .divider_nav {
+    display: none;
+  }
+  .My_name {
+    font-size: 0.9rem;
+    opacity: 0.9;
+    font-weight: 500;
+  }
+  .menu {
+    margin-top: 0;
+    gap: 1.5rem;
+  }
 
-    /* Hero Section */
-    .hero h1{
-        font-size: 4rem;
-        font-weight: 500;
-        line-height: 4rem;
-    }
-    .hero p{
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
+  /* Hero Section */
+  .hero h1 {
+    font-size: 4rem;
+    font-weight: 500;
+    line-height: 4rem;
+  }
+  .hero p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  /* Our Services */
+  .Our_Services {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .hori_divi {
+    display: none;
+  }
+
+  .Our_Services h3 {
+    font-size: 01.1rem;
+  }
+  .marquee {
+    gap: 0rem;
+  }
+
+  .images {
+    gap: 0rem;
+  }
+  .marquee img {
+    margin: 0 2rem;
+  }
 }
-
-
-
 
 /* For Laptop */
 
-@media screen and (min-width:1200px) {
-    body{
-        padding: 1rem;
-    }
-    main{
-        padding: 1.5rem 3rem;
-    }
+@media screen and (min-width: 1200px) {
+  body {
+    padding: 1rem;
+  }
+  main {
+    padding: 1.5rem 3rem;
+    padding-top: 0;
+  }
 
-    /* Hero Section */
-    .hero{
-        display: flex;
-        align-items: start;
-        justify-content: space-between;
-        gap: 1rem;
-    }
-    
-    .hero_text{
-        width: 60%;
-        align-items: start;
-    }
-    .hero h1{
-        font-size: 5rem;
-        font-weight: 500;
-        line-height: 5rem;
-    }
-    .hero p{
-        margin-top: 1rem;
-        font-size: 1.5rem;
-        font-weight: 400;
-    }
-    .hero video{
-        object-fit: cover;
-        width: 50%;
-        height: 600px;
-        margin: 0;
+  /* Navigation */
+  .navigation {
+    margin: 1.5rem 0;
+  }
 
 
-    }
+  /* Hero Section */
+  .hero {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 
+  .hero_text {
+    width: 60%;
+    align-items: start;
+  }
+  .hero h1 {
+    font-size: 5rem;
+    font-weight: 500;
+    line-height: 5rem;
+  }
+  .hero p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  .hero video {
+    object-fit: cover;
+    width: 50%;
+    height: 600px;
+    margin: 0;
+    margin-bottom: 2rem;
+  }
+
+  /* Our Services */
+  .Our_Services {
+    display: flex;
+    width: 100%;
+    margin-top: 2rem;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  .horizontan_divider {
+    display: block;
+    width: 1px;
+    height: 3rem;
+    margin-top: 1rem;
+    padding: 0.4px;
+    background-color: var(--secondary_color);
+  }
+
+  .Our_Services h3 {
+    font-family: "Roboto Mono", monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.01rem;
+    word-spacing: -0.3rem;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: -1rem;
+  }
+  .marquee {
+    width: 87%;
+    margin-top: 2rem;
+    display: flex;
+    gap: 0rem;
+    overflow: hidden;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .images {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0.5rem;
+    gap: 0rem;
+    animation: marquee 10s linear infinite both;
+  }
+  .marquee img {
+    width: 5rem;
+    margin: 0 3rem;
+    object-fit: contain;
+  }
+
+ 
 }
