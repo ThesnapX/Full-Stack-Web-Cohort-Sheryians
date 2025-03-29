@@ -40,6 +40,7 @@ main {
   display: flex;
   align-items: center;
   gap: 0.8rem;
+  margin-bottom: 1rem;
 }
 .logo {
   font-weight: 500;
@@ -66,6 +67,7 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 0.8rem;
   margin-top: 0.8rem;
 }
 .menu > a {
@@ -119,6 +121,7 @@ main {
   overflow: hidden;
   align-items: center;
   flex-wrap: nowrap;
+  margin-bottom: 2rem;
 }
 .images {
   display: flex;
@@ -142,17 +145,28 @@ main {
 }
 .divider_nav_dark {
   width: 100%;
-
-  height: 2px;
   background-color: var(--secondary_color);
 }
 
 /* What we do */
+.what_we_do .branding{
+  margin: 2rem 0;
+}
+.what_we_do .design{
+  margin: 2rem 0;
+}
+.what_we_do .branding1{
+  margin: 2rem 0;
+}
+.what_we_do .design1{
+  margin: 2rem 0;
+}
+
+
 .what_we_do h3 {
   display: none;
 }
 .branding img {
-  margin-top: 2rem;
   width: 3rem;
   rotate: 45deg;
 }
@@ -171,16 +185,15 @@ main {
   opacity: 0.9;
 }
 .design img {
-  margin-top: 2rem;
+  margin-top: 0.4rem;
   width: 3.6rem;
   rotate: 135deg;
 }
 .branding1 img {
-  margin-top: 2rem;
   width: 3.8rem;
 }
 .design1 img {
-  margin-top: 2rem;
+  margin-top: 0.3rem;
   width: 4rem;
 }
 
@@ -245,7 +258,140 @@ main {
   .marquee img {
     margin: 0 2rem;
   }
+
+    .divider_nav_dark{
+      width: 100%;
+      height: 1px;
+      background-color: var(--secondary_color);
+    }
+
+  /* What we do */
+  .what_we_do{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: start;
+    gap: 0;
+    position: relative;
+    padding: 4rem 0 2rem 0;
+  }
+  .what_we_do .text_head{
+    font-family: 'Roboto Mono', monospace;
+    display:inline;
+    font-size: 2.5rem;
+    font-weight: 300;
+    text-align: center;
+    letter-spacing: 1rem;
+    line-height: 1.5rem;
+    text-transform: uppercase;
+    word-spacing: -3rem;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    padding: 0 1rem 0 0rem;
+    color: var(--secondary_color);
+  }
+  .what_we_do .divider_nav_vertical{
+    width: 1px;
+    background-color: var(--secondary_color);
+    margin: 0 2rem 0 2rem;
+  }
+
+  .we_do{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .container1{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+  }
+  .container1 .divider_nav{
+    width: 2px;
+  }
+  .container1 .dividernav{
+    display: none;
+  }
+  .what_we_do .branding{
+    width: 50%;
+    margin: 0rem 0 2rem 0;
+  }
+  .what_we_do .design{
+    width: 50%;
+    margin: 0rem 0;
+  }
+
+  .container2{
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+  }
+  .container2 .divider_nav{
+    width: 2px;
+  }
+  .what_we_do .branding1{
+    margin: 2rem 0;
+    width: 50%;
+
+  }
+  .what_we_do .design1{
+    margin: 2rem 0;
+    width: 50%;
+
+  }
+
+  .hori_divider_nav{
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary_color);
+  }
+  
+  
+  .what_we_do h3 {
+    display: none;
+  }
+  .branding img {
+    width: 3rem;
+    rotate: 45deg;
+  }
+  .what_we_do h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .what_we_do p {
+    font-weight: 300;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.5rem;
+    opacity: 0.9;
+  }
+  .design img {
+    margin-top: 0.4rem;
+    width: 3.6rem;
+    rotate: 135deg;
+  }
+  .branding1 img {
+    width: 3.8rem;
+  }
+  .design1 img {
+    margin-top: 0.3rem;
+    width: 4rem;
+  }
+
+
 }
+
+
+
+
+
+
+
+
+
 
 /* For Laptop */
 
@@ -344,6 +490,125 @@ main {
     width: 5rem;
     margin: 0 3rem;
     object-fit: contain;
+  }
+
+  /* What we do */
+  .what_we_do{
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    gap: 0;
+    position: relative;
+    padding: 4rem 0 2rem 0;
+  }
+  .what_we_do .text_head{
+    font-family: 'Roboto Mono', monospace;
+    display:inline;
+    width: 40%;
+    font-size: 1rem;
+    font-weight:400;
+    text-align: start;
+    letter-spacing: 0.1rem;
+    /* line-height: 1.5rem; */
+    text-transform: uppercase;
+    word-spacing: 0rem;
+    writing-mode: horizontal-tb;
+    text-orientation:sideways-right;
+    padding: 0 1rem 0 0rem;
+    color: var(--secondary_color);
+  }
+  .what_we_do .divider_nav_vertical{
+    width: 1px;
+    background-color: var(--secondary_color);
+    margin: 0 2rem 0 2rem;
+  }
+
+  .we_do{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .container1{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+  }
+  .container1 .divider_nav{
+    width: 1.5px;
+  }
+  .container1 .dividernav{
+    display: none;
+  }
+  .what_we_do .branding{
+    width: 50%;
+    margin: 0rem 0 2rem 0;
+    padding-right: 0;
+  }
+  .what_we_do .design{
+    width: 50%;
+    margin: 0rem 0;
+  }
+
+  .container2{
+    display: flex;
+    width: 100%;
+    gap: 3rem;
+  }
+  .container2 .divider_nav{
+    width: 1.5px;
+  }
+  .what_we_do .branding1{
+    margin: 2rem 0;
+    padding-right: 0;
+    width: 50%;
+
+  }
+  .what_we_do .design1{
+    margin: 2rem 0;
+    width: 50%;
+
+  }
+
+  .hori_divider_nav{
+    height: 1px;
+    width: 100%;
+    background-color: var(--secondary_color);
+  }
+  
+  
+  .what_we_do h3 {
+    display: none;
+  }
+  .branding img {
+    width: 3rem;
+    rotate: 45deg;
+  }
+  .what_we_do h1 {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  .what_we_do p {
+    font-weight: 300;
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    letter-spacing: 0.03rem;
+    line-height: 1.5rem;
+    opacity: 0.9;
+  }
+  .design img {
+    margin-top: 0.4rem;
+    width: 3.6rem;
+    rotate: 135deg;
+  }
+  .branding1 img {
+    width: 3.8rem;
+  }
+  .design1 img {
+    margin-top: 0.3rem;
+    width: 4rem;
   }
 
  
