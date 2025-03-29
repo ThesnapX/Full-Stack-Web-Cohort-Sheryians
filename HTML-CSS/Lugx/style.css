@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+}
+
+.border-frame{
+    border: solid #eeeeee 10px;
+    position: fixed;
+    /* position: fixed; */
+    left: 0; 
+    bottom: 0;
+    top:0; 
+    right:0
+    
+}
+
+
+@font-face {
+    font-family: a;
+    src: url(/Lugx/Poppins/);
+}
+
+nav{
+    position: fixed;
+    height: 10vh;
+    /* width: 100%; */
+    width: 98.8%;
+    margin-left: 9px;
+    margin-top: 9px;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 80px;
+    background: linear-gradient(45deg, rgba(32,70,196,1) 0%, rgba(0,123,255,1) 100%);
+    border-end-end-radius: 25px;
+    border-end-start-radius: 25px;
+    z-index: 999;
+    box-shadow: #00000024 0px 10px 20px;
+
+ 
+
+}
+#menu{
+    display: flex;
+    /* gap: 50px; */
+}
+nav img{
+    height: 5vh;
+}
+#menu h4{
+    margin: 0px 15px;
+    font-family: Poppins;
+    font-weight: 300;
+    color: #f5fcff;
+    /* position: relative; */
+    align-self: center;
+    /* box-sizing: border-box; */
+    transition: all linear 0.2s;
+    padding: 8px 14px;
+}
+
+#menu h4:hover{
+    background-color: rgba(0, 140, 255, 0.338);
+    padding: 8px 14px;
+    border-radius: 50px;
+}
+
+#menu h4:active{
+    background-color: rgba(0, 140, 255, 0.338);
+    padding: 8px 14px;
+    border-radius: 50px;
+}
+
+#menu>button{
+    margin: 0px 20px;
+    font-family: Poppins;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #f5fcff;
+    background-color: rgb(255, 98, 98);
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: none;
+}
+
+#main{
+    z-index: -1;
+    border: solid #eeeeee 10px;
+
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 72px;
+    /* margin-left: ; */
+    background-image: url(https://templatemo.com/templates/templatemo_589_lugx_gaming/assets/images/banner-bg.jpg);
+    gap: 15%;
+    position: relative;
+    z-index:-1;
+}
+
+#img-content{
+    position: relative;
+    transition: all ease 0.5s;
+}
+
+#img-content img{
+    height: 60%;
+    border-radius: 30px;
+    /* position: relative; */
+}
+#img-price{
+    position: absolute;
+    padding: 8px 18px;
+    border-radius: 30px;
+    background-color: #0062ff;
+    right: 12px;
+    top: 12px;
+    font-family: Poppins;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    box-shadow:  #0000003f 0px 05px 010px;
+
+
+}
+
+#img-percent{
+    position: absolute;
+    background-color: rgb(255, 98, 98);
+    border-radius: 100%;
+    padding: 34px 20px;
+    box-shadow:  #0000002f 8px -7px 015px;
+    bottom: -25px;
+    left: -45px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+#content{
+    font-family: Poppins;
+    color: #fff;
+    position: relative;
+    width: 50%;
+}
+#search-bar{
+    width: 65%; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    /* padding: ; */
+    border-radius: 50px;
+}
+
+#search-bar h4{
+    color: rgb(80, 80, 80);
+    font-weight: 400;
+    padding-left: 20px;
+    font-size: 15px;
+}
+
+#search-bar button{
+    background-color: rgb(255, 98, 98);
+    padding: 18px 40px;
+    margin: 0;
+    border: none;
+    left: 60%;
+    /* position: absolute; */
+    border-radius: 50px;
+    background-size: cover;
+    color: #fff;
+    font-size: 16px;
+    transition: all ease 0.2s;
+}
+
+#search-bar button:hover{
+    background-color: #478eff;
+    box-shadow: #69a2ffb3 0px 0px 50px;
+}
+
+
+#content h2{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+#content h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    margin-bottom: 60px;
+}
+
+#content p{
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 60px;
+
+}
+#page2{
+    height: 100vh;
+    width: 100%;
+    background-color: red;
+
+}
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: yellow;
+    
+}
