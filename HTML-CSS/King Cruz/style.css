@@ -1,1 +1,166 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair", serif;
+  color: #3f0000;
+}
+
+p {
+  font-family: "Poppins", sans-serif;
+  color: #3f0000;
+}
+
+body {
+  background-color: #ffeded;
+}
+
+main {
+  padding: 1rem;
+}
+
+nav {
+  position: relative;
+}
+nav .topnav {
+  display: flex;
+  position: sticky;
+  top: 0;
+  align-items: center;
+  gap: 1rem;
+  background-color: #ffeded;
+  padding-bottom: 0.5rem;
+  border-bottom: rgba(63, 0, 0, 0.1058823529) solid 1px;
+}
+nav .topnav img {
+  width: 8%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+nav .topnav h1 {
+  font-size: 1.8rem;
+  font-weight: 800;
+}
+nav .topnav .divider {
+  height: 1px;
+  width: 1rem;
+  background-color: #3f0000;
+}
+nav .topnav p {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.15rem;
+  opacity: 0.4;
+}
+nav .topnav .menu {
+  display: none;
+}
+nav .downnav {
+  display: flex;
+  position: fixed;
+  justify-content: space-around;
+  width: 94.6%;
+  padding: 1rem 0;
+  bottom: 0;
+  background-color: #ffe4e4;
+  border-top: rgba(63, 0, 0, 0.1058823529) solid 2px;
+  border-radius: 15px 15px 0 0;
+}
+nav .downnav img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 5%;
+}
+
+@media (min-width: 600px) {
+  main {
+    padding: 1rem 2rem;
+  }
+  nav .topnav {
+    padding-bottom: 0.8rem;
+  }
+  nav .downnav {
+    width: 92.2%;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    padding: 2rem 6rem;
+  }
+  nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    background-color: #ffeded;
+    padding-bottom: 0.5rem;
+    border-bottom: none;
+  }
+  nav .topnav img {
+    width: 12%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  nav .topnav h1 {
+    display: none;
+  }
+  nav .topnav .divider {
+    display: none;
+  }
+  nav .topnav p {
+    display: none;
+  }
+  nav .topnav .menu {
+    display: flex;
+    gap: 1.9rem;
+  }
+  nav .topnav .menu p {
+    display: inline;
+    font-size: 1rem;
+    text-transform: capitalize;
+    letter-spacing: 0.08rem;
+    opacity: 1;
+  }
+  nav .topnav .menu .shop_menu {
+    display: flex;
+    gap: 0.5rem;
+  }
+  nav .topnav .menu .shop_menu img {
+    width: 15%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  nav .downnav {
+    display: flex;
+    position: static;
+    align-items: center;
+    justify-content: end;
+    width: 20%;
+    gap: 1.8rem;
+    padding: 0rem 0;
+    background-color: transparent;
+    border-top: none;
+    border-radius: 0;
+  }
+  nav .downnav img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 9%;
+  }
+}/*# sourceMappingURL=style.css.map */
