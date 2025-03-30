@@ -161,8 +161,6 @@ main {
 .what_we_do .design1{
   margin: 2rem 0;
 }
-
-
 .what_we_do h3 {
   display: none;
 }
@@ -196,6 +194,177 @@ main {
   margin-top: 0.3rem;
   width: 4rem;
 }
+
+/* Featured Work */
+
+.feature_work{
+  padding: 2rem 0;
+}
+.featured h2{
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  /* margin-top: 2rem; */
+}
+.featured p{
+  margin: 0.8rem 0 2rem 0;
+  font-size: 1.2rem;
+  font-weight: 300;
+  line-height: 1.8rem;
+}
+.featured h4{
+  display: inline;
+  background-color: var(--secondary_color);
+  color: var(--primary_color);
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  border-radius: 0.4rem;
+  padding: 0.5rem;
+}
+.feature_work .divider_nav{
+  margin: 2.5rem 0 0 0;
+}
+
+.work_card img{
+  width: 100%;
+  border-radius: 1rem;
+}
+.work_card{
+  margin: 2rem 0 0 0;
+}
+.work_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.work_info h3{
+  font-size: 1.5rem;
+  font-weight:500;
+  letter-spacing: 0.05rem;
+  margin: 0.5rem 0;
+}
+.work_info p{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+}
+
+
+/* Our Services */
+.our_values .divider_nav1{
+  display: none;
+}
+.our_image .divider_nav{
+  display: block;
+}
+.our_values h1{
+  font-size: 2.3rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2rem 0;
+}
+.our_values img{
+  margin: 2rem 0 0 0;
+  width: 100%;
+  border-radius: 1rem;
+}
+.our{
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  margin:  2rem 0;
+  gap: 1rem;
+}
+.our h4{
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1rem;
+  font-weight: 300;
+  border-radius: 50px;
+  border: var(--secondary_color) solid 1px;
+  height: 1%;
+  padding: 0.5rem;
+  margin: 0.2rem 1rem;
+}
+.our_text h3{
+  font-size: 2rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+.our_text p{
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+
+/* Footer */
+.info{
+  margin: 2rem 0;
+}
+.info h1{
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.info p{
+  font-size: 1.1rem;
+  font-weight: 300;
+  line-height: 1.4rem;
+  margin-bottom: 4rem;
+}
+.country{
+  display: flex;
+  gap: 1rem;
+}
+.country h3{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 300;
+  font-size: 0.8rem;
+  padding: 0.5rem;
+  border-radius: 25px;
+  border: var(--secondary_color) solid 1px;
+}
+
+.foot{
+  margin: 2rem 0;
+}
+.foot h3{
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+}
+.foot p{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+.foot h4{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  background-color: var(--secondary_color);
+  padding: 0.6rem 1rem;
+  color: var(--primary_color);
+  border-radius: 5px;
+  width: 41.5%;
+  margin-top: 2rem;
+}
+.last h3{
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  text-align: center;
+  margin-top: 1rem;
+}
+.pLinks{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+
+
+
+
 
 /* For Tablet */
 
@@ -381,7 +550,59 @@ main {
     width: 4rem;
   }
 
+  /* Featured Work */
+  .feature_work .divider_nav{
+    margin: 3rem 0;
+  }
+  .work_imag{
+    display: grid;
+    grid-template-columns: 48% 48%;
+    gap: 2rem;
+    grid-template-areas: 
+    "a a"
+    "b c"
+    "d e";
+  }
+  .featured h2{
+    font-size: 3.5rem;
+  }
+  .featured p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  .work_card{
+    margin: 0;
+  }
+  .work_info h3{
+    font-size: 1.8rem;
+  }
+  .work_info p{
+    font-size: 1.1rem;
+  }
 
+  .dancing{
+    grid-area:a ;
+  }
+  .Enjoy{
+    grid-area:b ;
+  }
+  .Pure{
+    grid-area:c ;
+  }
+  .Boring{
+    grid-area:d ;
+  }
+  .New{
+    grid-area:e ;
+  }
+
+  /* Our Services */
+  .our_values h1{
+  font-size: 3rem;
+  }
+  .our_values .divider_nav1{
+    display: none;
+  }
 }
 
 
@@ -416,6 +637,8 @@ main {
     align-items: start;
     justify-content: space-between;
     gap: 1rem;
+    margin-bottom: 4rem;
+
   }
 
   .hero_text {
@@ -437,7 +660,6 @@ main {
     width: 50%;
     height: 600px;
     margin: 0;
-    margin-bottom: 2rem;
   }
 
   /* Our Services */
@@ -500,6 +722,7 @@ main {
     gap: 0;
     position: relative;
     padding: 4rem 0 2rem 0;
+    margin: 2rem 0;
   }
   .what_we_do .text_head{
     font-family: 'Roboto Mono', monospace;
@@ -576,7 +799,6 @@ main {
     background-color: var(--secondary_color);
   }
   
-  
   .what_we_do h3 {
     display: none;
   }
@@ -612,4 +834,127 @@ main {
   }
 
  
+  /* Featured Work */
+  .feature_work{
+    position: relative;
+    display: flex;
+    gap: 3rem;
+  }
+  .feature_work .divider_nav{
+    width: 1px;
+    margin: 0 0;
+  }
+  .featured{
+    width: 90%;
+    height: 100%;
+    position: sticky;
+    top: 2rem;
+  }
+
+  /* Our Values */
+  .our_values{
+    display: flex;
+    margin: 2rem 0;
+  }
+  .our_image{
+    padding: 0 0rem;
+  }
+  .our_values .divider_nav1{
+    display: block;
+    width: 1px;
+    margin: 2rem 3rem;
+    background-color: var(--secondary_color);
+  }
+  .our_image .divider_nav{
+    display: none;
+  }
+  .our_image h1{
+    text-align: start;
+    margin: 0 0 0 0;
+  }
+  .our_image img{
+    width: 40rem;
+    height: 40rem;
+    object-fit: cover;
+  }
+  .values{
+    margin: 2rem 0;
+  }
+
+
+  /* Footer */
+  footer{
+    display: flex;
+    margin: 2rem 0;
+  }
+  footer .divider_nav{
+    width: 1px;
+  }
+  .info{
+    margin: 2rem 0;
+    width: 40%;
+  }
+  .info h1{
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .info p{
+    font-size: 1.1rem;
+    font-weight: 300;
+    line-height: 1.4rem;
+    margin-bottom: 4rem;
+  }
+  .country{
+    display: flex;
+    gap: 1rem;
+  }
+  .country h3{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 300;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+    border-radius: 25px;
+    border: var(--secondary_color) solid 1px;
+  }
+  .foot_lin{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 2rem;
+  }
+  .foot_lin .divider_nav{
+    width: 1px;
+  }
+  .foot{
+    display: block;
+    width: 100%;
+    /* margin: 2rem 0; */
+  }
+  .foot h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+  }
+  .foot p{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+  .foot h4{
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    background-color: var(--secondary_color);
+    padding: 0.6rem 1rem;
+    color: var(--primary_color);
+    border-radius: 5px;
+    width: 65%;
+    margin-top: 2rem;
+  }
+
+  .last{
+    display: flex;
+    justify-content: space-between;
+  }
+
 }
