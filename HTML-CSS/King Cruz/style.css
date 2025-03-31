@@ -10,7 +10,12 @@ body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Playfair", serif;
   color: #3f0000;
 }
@@ -25,16 +30,15 @@ body {
 }
 
 main {
-  padding: 1rem;
+  overflow: hidden;
 }
 
 nav {
+  margin: 1rem;
   position: relative;
 }
 nav .topnav {
   display: flex;
-  position: sticky;
-  top: 0;
   align-items: center;
   gap: 1rem;
   background-color: #ffeded;
@@ -75,6 +79,7 @@ nav .downnav {
   background-color: #ffe4e4;
   border-top: rgba(63, 0, 0, 0.1058823529) solid 2px;
   border-radius: 15px 15px 0 0;
+  z-index: 99;
 }
 nav .downnav img {
   -o-object-fit: contain;
@@ -82,6 +87,158 @@ nav .downnav img {
   width: 5%;
 }
 
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -13rem;
+  transform: translateY(-5rem);
+}
+.hero .blur {
+  position: absolute;
+  padding: 10rem;
+  background-color: #ff0808;
+  opacity: 0.21;
+  border-radius: 50%;
+  filter: blur(85px);
+  z-index: -1;
+  top: 8.5rem;
+  left: 6rem;
+}
+.hero .hero_text .h_text {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0.4rem;
+  position: absolute;
+}
+.hero .hero_text .h_text h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+.hero .hero_text .h_text p {
+  font-size: 1rem;
+  font-weight: 100;
+}
+.hero .hero_text .make_ever {
+  top: 11rem;
+  left: 10rem;
+}
+.hero .hero_text .styl_wi {
+  top: 14.5rem;
+  left: 6rem;
+}
+.hero .hero_text h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  line-height: 3rem;
+  top: 18rem;
+  left: 8rem;
+}
+.hero .hero_image {
+  margin-top: 15rem;
+}
+.hero .hero_image img {
+  width: 30%;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.211);
+  overflow-x: hidden;
+}
+.hero .hero_image .white {
+  top: 18.5rem;
+  left: -4.2rem;
+  width: 35%;
+}
+.hero .hero_image .green {
+  top: 23rem;
+  left: 11rem;
+  width: 45%;
+}
+.hero .hero_image .brown {
+  top: 5.8rem;
+  left: 24.5rem;
+  width: 33%;
+  overflow-x: hidden;
+}
+.hero .black_strip {
+  display: flex;
+  position: absolute;
+  top: 40rem;
+  rotate: -4deg;
+  width: 100%;
+  z-index: 2;
+  padding: 0.4rem 1rem;
+  background-color: #282828;
+}
+.hero .black_strip .mstrip {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  animation: marquee 10s linear infinite both;
+}
+.hero .black_strip .mstrip p {
+  text-align: center;
+  width: 5.3rem;
+  color: #ffeded;
+}
+.hero .black_strip .mstrip .strip_elipse {
+  height: 2%;
+  padding: 3px;
+  border-radius: 20px;
+  background-color: #ffeded;
+}
+.hero .black_strip .mstrip2 {
+  margin: 0 1rem;
+}
+.hero .black_strip .mstrip3 {
+  margin: 0 1rem;
+}
+.hero .orange_strip {
+  display: flex;
+  position: absolute;
+  top: 43rem;
+  rotate: -4deg;
+  width: 100%;
+  z-index: 2;
+  padding: 0.4rem 1rem;
+  background-color: #FF5E00;
+}
+.hero .orange_strip .mstrip {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  animation: marquee 15s linear infinite both;
+}
+.hero .orange_strip .mstrip p {
+  text-align: center;
+  width: 5.3rem;
+  color: #ffeded;
+}
+.hero .orange_strip .mstrip .strip_elipse {
+  height: 2%;
+  padding: 3px;
+  border-radius: 20px;
+  background-color: #ffeded;
+}
+.hero .orange_strip .mstrip2 {
+  margin: 0 1rem;
+}
+.hero .orange_strip .mstrip3 {
+  margin: 0 1rem;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-100%);
+  }
+}
 @media (min-width: 600px) {
   main {
     padding: 1rem 2rem;
@@ -100,6 +257,7 @@ nav .downnav img {
   nav {
     position: relative;
     display: flex;
+    height: 100%;
     align-items: center;
     justify-content: space-between;
   }
