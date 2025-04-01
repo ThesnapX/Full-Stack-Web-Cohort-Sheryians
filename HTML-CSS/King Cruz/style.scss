@@ -54,6 +54,7 @@ main {
       background-color: $p_color;
       padding-bottom: 0.5rem;
       border-bottom: #3f00001b solid 1px;
+
       img {
         width: 8%;
         object-fit: contain;
@@ -287,7 +288,7 @@ main {
 }
 
 // For laptop
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   main {
     padding: 2rem 6rem;
   }
@@ -301,7 +302,6 @@ main {
       display: flex;
       height: 100%;
       align-items: center;
-      z-index: 99;
       justify-content: space-between;
       .topnav {
         position: static;
@@ -343,31 +343,6 @@ main {
               object-fit: contain;
             }
           }
-          .shop_menu {
-            display: flex;
-            gap: 0.5rem;
-            img {
-              width: 15%;
-              object-fit: contain;
-            }
-          }
-        }
-      }
-      .icon_nav {
-        display: flex;
-        position: static;
-        align-items: center;
-        justify-content: end;
-        width: 20%;
-        gap: 1.8rem;
-        padding: 0rem 0;
-        background-color: transparent;
-        border-top: none;
-        border-radius: 0;
-        img {
-          object-fit: contain;
-          // height: 100%;
-          width: 10%;
         }
       }
       .downnav {
@@ -389,8 +364,5 @@ main {
         }
       }
     }
-  }
-  .brown {
-    z-index: -1;
   }
 }
