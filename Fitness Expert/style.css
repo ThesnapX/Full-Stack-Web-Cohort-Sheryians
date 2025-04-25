@@ -104,16 +104,7 @@ p{
 }
 
 /* About Trainer */
-.about-trainer::before{
-  content: '';
-  position: absolute;
-  top: 735px; 
-  left: 0;
-  width:100%;
-  height: 200px;
-  background: linear-gradient(to top, #171717 0%, rgba(16, 16, 16, 0) 100%);
-  z-index:  15; /* Send it behind the content */
-}
+
 .about-trainer-title{
   border: 2px solid #75001eFF;
 }
@@ -299,13 +290,6 @@ textarea {
 }
 
 
-@media(min-width:768px){
-  .about-trainer::before{
-    top: 1080px; 
-  }
-}
-
-
 @media (min-width:1024px) {
 .mouse-cursor{
   transition: all 0.1s linear ;
@@ -323,9 +307,6 @@ textarea {
 }
 
 /* About Trainer */
-.about-trainer::before{
-  top: 600px; 
-}
 .trainer-qualities{
   border-radius: 10px;
 }
