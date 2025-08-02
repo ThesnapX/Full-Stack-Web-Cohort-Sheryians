@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+                <!-- Pop Up  -->
+        <section class="pop-basic">
+            <img src="/close.svg" id="close-pop" alt="">
+            <div class="pop-form">
+                <div class="contact-name pop-input">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" name="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="contact-email pop-input">
+                    <!-- <label for="email-id">Email ID</label> -->
+                    <input type="email" name="email" id="email-id" placeholder="Email">
+                </div>
+                <div class="contact-name pop-input">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" name="text" id="" placeholder="Youtube Channel Name">
+                </div>
+                <div class="contact-link pop-input">
+                    <!-- <label for="link">Name</label> -->
+                    <input type="text" name="text" id="link" placeholder="Youtube Channel Link">
+                </div>
+                <div class="contact-message pop-input">
+                    <!-- <label for="email-id">Email ID</label> -->
+                    <textarea name="message" id="contact-message" placeholder="Message"></textarea>
+                </div>
+                <input class="btn" type="button" value="Submit">
+            </div>
+        </section>
+    </main>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const openBtn = document.getElementById('open-popup');
+        const closeBtn = document.getElementById('close-popup');
+        const popup = document.getElementById('popup');
+
+        // Open popup
+        openBtn.addEventListener('click', function() {
+            popup.style.display = 'flex';
+            document.body.style.overflow = 'hidden'; // Prevent scrolling
+        });
+
+        // Close popup
+        closeBtn.addEventListener('click', function() {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto'; // Enable scrolling
+        });
+
+        // Close when clicking outside content
+        popup.addEventListener('click', function(e) {
+            if (e.target === popup) {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close with Escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && popup.style.display === 'flex') {
+            popup.style.display = 'none';
+            document.body.style.overflow = 'auto';
+            }
+        });
+        });
+    </script>
+</body>
+</html>

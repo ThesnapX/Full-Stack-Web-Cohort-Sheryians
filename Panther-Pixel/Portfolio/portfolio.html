@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- BG Blurs -->
+    <div class="bg-blur">
+        <div class="blue-blur"></div>
+        <div class="purple-blur"></div>
+    </div>
+    <main>
+
+        <!-- Cursor -->
+        <div class="custom-cursor" id="cursor"></div>
+        <div id="cursor-blur"></div>
+
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="nav-desktop">
+            <div class="nav-bg">
+                <div class="nav-left">
+                    <img src="/logo-icon.png" alt="Panther Logo">
+                    <a href="/index.html">Panther <Span>Pixel</Span></a>
+
+                </div>
+                <div class="nav-mid">
+                    <a href="/index.html" class="menu">Home</a>
+                    <a href="/index.html#services" class="menu">Services</a>
+                    <a  href="/index.html#pricing" class="menu">Pricing</a>
+                    <a href="/Portfolio/portfolio.html" class="menu">Portfolio</a>
+                    <a href="/Testmonial-Page/testmonial.html" class="menu">Testimonials</a>
+
+                </div>
+                <div class="nav-right">
+                    <button class="btn"><a href="#">Get a Qoute</a></button>
+                </div>
+                <img class="nav-ham" onclick="openSidebar()" src="/hamburger.svg" alt="hamburger icon">
+
+            </div>
+        </nav>
+        <nav id="sidebar" class="nav-sidebar">
+            <div class="sidebar-bg">
+                <img onclick="closeSidebar()" class="nav-close" src="/close.svg" alt="close icon">
+                <div class="sidebar-left">
+                    <img src="/logo-icon.png" alt="Panther Logo">
+                    <a href="/index.html">Panther <Span>Pixel</Span></a>
+
+                </div>
+                <div class="sidebar-mid">
+                    <a href="/index.html" class="sidebar-menu">Home</a>
+                    <a href="/index.html#services" class="sidebar-menu">Services</a>
+                    <a  href="/index.html#pricing" class="sidebar-menu">Pricing</a>
+                    <a href="/Portfolio/portfolio.html" class="sidebar-menu">Portfolio</a>
+                    <a href="/Testmonial-Page/testmonial.html" class="sidebar-menu">Testimonials</a>
+
+                </div>
+                <div class="sidebar-right">
+                    <button class="btn"><a href="#">Get a Qoute</a></button>
+                </div>
+
+            </div>
+        </nav>
+
+        <!-- SEO Method Card -->
+        <section class="seo-method">
+            <div class="seo-method-card">
+                <h1>How We Do YouTube SEO?</h1>
+                <button class="btn"><a href="/Portfolio/seo-method.html">View SEO Strategy</a></button>
+            </div>
+        </section>
+
+
+        <!-- Project Overview -->
+        <section class="overview-section">
+            <div class="overview-top">
+                <h1>Precision-Crafted for <span>YouTube Growth</span></h1>
+                <p>Every element we create—thumbnails that stop scrolls, SEO that dominates search, ads that convert—is engineered to work together. Explore our building blocks of success.</p>
+            </div>
+            <div class="overview-wrapper">
+                <!-- <img src="/Portfolio/thumbnail-images/1.jpg" alt=""> -->
+
+            </div>
+        </section>
+        <!-- Lightbox HTML -->
+    <div class="lightbox" id="lightbox">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <span class="nav-btn prev-btn" id="prevBtn">&#10094;</span>
+        <div class="lightbox-content">
+            <img class="lightbox-img" id="lightboxImg" src="" alt="">
+        </div>
+        <span class="nav-btn next-btn" id="nextBtn">&#10095;</span>
+    </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-bg">
+            <div class="nav-left">
+                    <img src="/logo-icon.png" alt="Panther Logo">
+                    <a href="/index.html">Panther <Span>Pixel</Span></a>
+
+            </div>
+            <div class="footer-mid">
+                <div class="menu-links">
+                    <a href="/index.html" class="footer-menu">Home</a>
+                    <a href="/index.html#services" class="footer-menu">Services</a>
+                    <a href="/Portfolio/portfolio.html" class="footer-menu">Portfolio</a>
+                    <a href="/index.html#pricing" class="footer-menu">Pricing</a>
+                    <a href="/Testmonial-Page/testmonial.html" class="footer-menu">Testimonials</a>
+
+                </div>
+                <div class="usefull-links">
+                    <a href="#" class="links">About Us</a>
+                    <a href="/Other-Pages/privacy-policy.html" class="links">Privacy Policy</a>
+                    <a href="/Other-Pages/tac.html" class="links">Terms and Condition</a>
+                    <a href="/Other-Pages/faq.html" class="links">FaQ's</a>
+                </div>
+            </div>
+            
+            <div class="footer-right contact-us">
+                <h1>Contact Us</h1>
+                <div class="contact-form">
+                    <div class="contact-name contact-input">
+                        <!-- <label for="name">Name</label> -->
+                        <input type="text" name="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="contact-email contact-input">
+                        <!-- <label for="email-id">Email ID</label> -->
+                        <input type="email" name="email" id="email-id" placeholder="Email">
+                    </div>
+                    <div class="contact-message contact-input">
+                        <!-- <label for="email-id">Email ID</label> -->
+                        <textarea name="message" id="contact-message" placeholder="Message"></textarea>
+                    </div>
+                    <input class="btn" type="button" value="Submit">
+                </div>
+            </div>
+            </div>
+
+        </footer>
+
+    </main>
+
+    <script src="/Portfolio/portfolio.js"></script>
+</body>
+</html>

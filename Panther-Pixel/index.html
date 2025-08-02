@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panther Pixel</title>
+    <link rel="stylesheet" href="/default.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+
+    <!-- BG Blurs -->
+    <div class="bg-blur">
+        <div class="blue-blur"></div>
+        <div class="purple-blur"></div>
+    </div>
+
+
+    <main>
+
+        <!-- Cursor -->
+        <div class="custom-cursor" id="cursor"></div>
+        <div id="cursor-blur"></div>
+
+
+        <!-- Navigation Bar -->
+        <nav id="navbar" class="nav-desktop">
+            <div class="nav-bg">
+                <div class="nav-left">
+                    <img src="/logo-icon.png" alt="Panther Logo">
+                    <a href="/index.html">Panther <Span>Pixel</Span></a>
+                </div>
+                <div class="nav-mid">
+                    <a href="/index.html" class="menu">Home</a>
+                    <a href="#services" class="menu">Services</a>
+                    <a  href="#pricing" class="menu">Pricing</a>
+                    <a href="/Portfolio/portfolio.html" class="menu">Portfolio</a>
+                    <a href="/Testmonial-Page/testmonial.html" class="menu">Testimonials</a>
+
+                </div>
+                <div class="nav-right">
+                    <button class="btn"><a href="#">Get a Qoute</a></button>
+                </div>
+                <img class="nav-ham" onclick="openSidebar()" src="/hamburger.svg" alt="hamburger icon">
+
+            </div>
+        </nav>
+        
+        <nav id="sidebar" class="nav-sidebar">
+            <div class="sidebar-bg">
+                <img onclick="closeSidebar()" class="nav-close" src="/close.svg" alt="close icon">
+                <div class="nav-left">
+                    <img src="/logo-icon.png" alt="Panther Logo">
+                    <a href="/index.html">Panther <Span>Pixel</Span></a>
+                </div>
+                <div class="sidebar-mid">
+                    <a href="/index.html" class="sidebar-menu">Home</a>
+                    <a href="#services" class="sidebar-menu">Services</a>
+                    <a  href="#pricing" class="sidebar-menu">Pricing</a>
+                    <a href="Portfolio/portfolio.html" class="sidebar-menu">Portfolio</a>
+                    <a href="/Testmonial-Page/testmonial.html" class="sidebar-menu">Testimonials</a>
+                </div>
+                <div class="sidebar-right">
+                    <button class="btn"><a href="#">Get a Qoute</a></button>
+                </div>
+            </div>
+        </nav>
+        
+
+
+
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>Grow Your <span>YouTube</span> Channel Faster</h1>
+                <p>SEO, thumbnails, and ads—all in one place to maximize your reach and revenue.</p>
+            </div>
+            <div class="hero-cta">
+                <button class="btn btn-primary" id="pop-up"><a href="#">Get a free sample now</a></button>
+                <button class="btn btn-ghost"><a href="#pricing">View Pricing</a></button>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <img src="/Home-Page/Assets/Projections-amico.svg" alt="Panther Pixel team optimizing YouTube SEO and thumbnails">
+            <div class="about-content">
+                <div class="about-text">
+                    <h4 class="tag about-tag">About Us</h4>
+                    <h1 class="about-title">Why <span>Panther Pixel</span>?</h1>
+                    <h4>We turn YouTube channels into growth machines.</h4>
+                    <p class="about-description">We're a collective of former YouTube creators and digital marketers who cracked the code to viral thumbnails. Now, we've merged that visual expertise with battle-tested SEO strategies to give your channel an unfair advantage. Every pixel we design and every keyword we optimize follows one rule: Make audiences stop scrolling and take action</p>
+                    <p class="about-confidential">
+                        Our SEO service is new, but the principles aren’t. We’re taking everything we learned from optimizing thumbnails for maximum clicks and applying that same precision to YouTube’s search algorithm.
+                    </p>
+                </div>
+                <div class="about-trust">
+                    <div class="trust">
+                        <h1>30+</h1>
+                        <p>Happy Clients</p>
+                    </div>
+                    <div class="trust">
+                        <h1>150+</h1>
+                        <p>Thumbnails Designed</p>
+                    </div>
+                    <div class="trust">
+                        <h1>100%</h1>
+                        <p>Youtube Focused</p>
+                    </div>
+                </div>
+                <div class="about-cta">
+                    <button class="btn  "><a href="#">Get a Qoute</a></button>
+                    <button class="btn btn-text"><a href="#">View Services</a></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thumbnail Service Section -->
+        <section class="thumbnail-section" id="services">
+            <div class="thumbnail-content">
+                <h4 class="tag thumbnail-tag">Thumbnail Design</h4>
+                <h1>Your <span>Thumbnails</span> Are Invisible. Let's Fix That.</h1>
+                <p>Every great YouTube video dies without a thumbnail that demands attention. Our designs combine proven psychological triggers with your brand's unique style to stop scrollers in their tracks and drive measurable results.</p>
+                <div class="thumbnail-list list">
+                    <div class="bullet-points">
+                        <div class="bullet-dot"></div>
+                        <p>We analyze your audience & competitors</p>
+                    </div>
+                    <div class="bullet-points">
+                        <div class="bullet-dot"></div>
+                        <p>Color, faces, text placement tuned for max CTR</p>
+                    </div>
+                        <div class="bullet-points">
+                        <div class="bullet-dot"></div>
+                        <p>48-hour turnaround with source files</p>
+                    </div>
+                </div>
+                <button class="btn "><a href="/Portfolio/portfolio.html">See Our Works</a></button>
+                <!-- <img src="arrow.svg" alt=""> -->
+            </div>
+            <img src="/Home-Page/Assets/Website Creator-bro.svg" alt="Thumbnail Designs">
+        </section>
+
+        <!-- SEO Service Section -->
+        <section class="seo-section">
+            <img src="/Home-Page/Assets/SEO analytics team-bro.svg" alt="seo analytics">
+            <div class="seo-content">
+                <h4 class="tag seo-tag">Youtube SEO</h4>
+                <h1>We’ve Cracked <span>YouTube’s Search Algorithm</span></h1>
+                <p>After mastering thumbnail psychology, we’ve trained our focus on what happens before the click—getting your videos seen. Our specialized YouTube SEO combines:</p>
+                <div class="seo-list list">
+                    <div class="bullet-points">
+                        <div class="bullet-dot"></div>
+                        <p>Trend-aware keyword strategies</p>
+                    </div>
+                    <div class="bullet-points">
+                        <div class="bullet-dot"></div>
+                        <p>Competitor-smashing optimization</p>
+                    </div>
+                        <div class="bullet-points">
+                        <div class="bullet-dot"></div>
+                        <p>Ranking-focused metadata crafting</p>
+                    </div>
+                </div>
+                <button class="btn "><a href="#">Explore Our SEO Method</a></button>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section class="pricing-section" id="pricing">
+            <div class="pricing-top">
+                <h1>Transparent <span>Pricing</span> for Every Creator’s Needs</h1>
+                <p>From one-time video boosts to full channel growth, choose the plan that matches your ambitions. No hidden fees—just measurable results..</p>
+            </div>
+            <div class="pricing-card-wrapper">
+                <div class="pricing-card">
+                    <p class="tag pricing-tag">Basic Plan</p>
+                    <div class="price">
+                        <h1>$25</h1>
+                        <div class="horizontal-divider"></div>
+                        <p>Per video</p>
+                    </div>
+                    <p class="pricing-card-description">Ideal for testing our service</p>
+                    <div class="list pricing-list">
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Title + Description Optimization</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Hashtags & Tags</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>1 Custom Thumbnail</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Captions + End Screens</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Basic Analytics Report</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-ghost " id="pop-up"><a href="">Get Started</a></button>
+                </div>
+                <div class="pricing-card">
+                    <p class="tag pricing-tag">Basic Plan</p>
+                    <div class="price">
+                        <h1>$25</h1>
+                        <div class="horizontal-divider"></div>
+                        <p>Per video</p>
+                    </div>
+                    <p class="pricing-card-description">Ideal for testing our service</p>
+                    <div class="list pricing-list">
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Title + Description Optimization</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Hashtags & Tags</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>1 Custom Thumbnail</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Captions + End Screens</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Basic Analytics Report</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-ghost " id="pop-up"><a href="">Get Started</a></button>
+                </div>
+                <div class="pricing-card">
+                    <p class="tag pricing-tag">Pro Plan</p>
+                    <div class="price">
+                        <h1>$219 <span>/month</span></h1>
+                    </div>
+                    <p class="pricing-card-description">For consistent monthly growth</p>
+                    <div class="list pricing-list">
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Everything in Basic +</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>8-10 New Video Optimizations/Month</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Channel SEO Makeover (Tags + About Section)</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Channel SEO Makeover</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Monthly Performance Reports</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>CTR Analysis</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Future Content Ideas</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-ghost" id="pop-up"><a href="">Contact Us</a></button>
+                </div>
+                <div class="pricing-card">
+                    <p class="tag pricing-tag">Custom Plan</p>
+                    <div class="price">
+                        <h1 style="font-size: 2rem;">Tailored solutions for established creators</h1>
+                    </div>
+                    <p class="pricing-card-description">For channels ready to scale</p>
+                    <div class="list pricing-list">
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Dedicated Strategy Calls</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Unlimited Optimizations</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Competitor Analysis</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p> Priority Support</p>
+                        </div>
+                        <div class="bullet-points">
+                            <div class="bullet-dot"></div>
+                            <p>Basic Analytics Report</p>
+                        </div>
+                    </div>
+                    <button class="btn btn-ghost" id="pop-up"><a href="">Contact Us</a></button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Project Overview -->
+        <section class="overview-section">
+            <div class="overview-top">
+                <h1>Precision-Crafted for <span>YouTube Growth</span></h1>
+                <p>Every element we create—thumbnails that stop scrolls, SEO that dominates search, ads that convert—is engineered to work together. Explore our building blocks of success.</p>
+            </div>
+            <div class="overview-wrapper">
+                <img class="thumbnail-images" src="/gallery-images/1.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/2.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/3.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/4.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/5.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/6.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/7.jpg" alt="">
+                <img class="thumbnail-images" src="/gallery-images/8.jpg" alt="">
+                <img class="img-9 thumbnail-images" src="/gallery-images/9.jpg" alt="">
+            </div>
+            <button class="btn"><a href="#">See Our Portfolio</a></button>
+        </section>
+
+        <!-- Testomonial -->
+        <section class="testmonial-section">
+            <div class="bg-blur">
+                <!-- <img src="/Home-Page/Assets/blob.svg" alt="custome shape svg">  -->
+            </div>
+            <div class="testmonial-top">
+                <h1>Trusted by <span>Creators</span> Who Hate Wasting Time</h1>
+                <p>Don’t just take our word for it—here’s what creators say about their transformed results after working with us. From CTR boosts to ranking jumps, the proof is in the performance.</p>
+            </div>
+            <div class="testmonial-card-wrapper">
+                <div class="testmonial-card">
+                    <div class="testmonial-context">
+                        <p>"We’ve worked with Panther Corporation for over a year now, and they’ve become a seamless extension of our team. Their montages and Instagram shorts take our raw footage to the next level – no more spending hours on edits ourselves. The fly-through videos they create for our luxury listings have actually become a selling point our clients ask for by name."</p>
+                    </div>
+                    <div class="testmonial-user">
+                        <h1>ARISE ARIEL</h1>
+                        <p>Videography Team</p>
+                    </div>
+                </div>
+                <div class="testmonial-card">
+                    <div class="testmonial-context">
+                        <p>"I remember sending Panther Corp a messy walkthrough clip, thinking, ‘This might be impossible to salvage.’ What they delivered left me speechless. The final video wasn’t just polished – it told a story about the home. Buyers started saying things like, ‘We could picture our family here,’ which is exactly what I needed. Now I breathe easier knowing they’re handling my edits."</p>
+                    </div>
+                    <div class="testmonial-user">
+                        <h1>CAROLINE</h1>
+                        <p>Realtor</p>
+                    </div>
+                </div>
+                <div class="testmonial-card">
+                    <div class="testmonial-context">
+                        <p>"Working with the team on my fly-through video was a delight—their creative touch transformed my footage into an immersive, compelling experience that captures the property perfectly. I'm thrilled with the result."</p>
+                    </div>
+                    <div class="testmonial-user">
+                        <h1>DELTA</h1>
+                        <p>Realtor</p>
+                    </div>
+                </div>
+                <div class="testmonial-card">
+                    <div class="testmonial-context">
+                        <p>"Panther Pixel completely transformed how our audience engages with our content. Their thumbnails increased our CTR by 40% almost overnight, and their SEO tweaks got us ranking for competitive car review terms we'd been chasing for months. This is next-level optimization."</p>
+                    </div>
+                    <div class="testmonial-user">
+                        <h1>Paul Shin</h1>
+                        <p>Automotive Creator</p>
+                    </div>
+                </div>
+                <div class="testmonial-card">
+                    <div class="testmonial-context">
+                        <p>"Working with Panther Pixel was a game-changer. Their custom thumbnails made our videos stand out in a saturated true crime space, and their title optimizations helped us double our average view duration. They 'get' YouTube's algorithm like no one else."</p>
+                    </div>
+                    <div class="testmonial-user">
+                        <h1>American Made</h1>
+                        <p>Crime Documentary Channel</p>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-primary"><a href="/Testmonial-Page/testmonial.html">See More Reviews</a></button>
+        </section>
+
+
+
+        <!-- Pop Up  -->
+        <section class="pop-basic">
+            <img src="/close.svg" id="close-pop" alt="">
+            <div class="pop-form">
+                <div class="contact-name pop-input">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" name="text" id="name" placeholder="Your Name">
+                </div>
+                <div class="contact-email pop-input">
+                    <!-- <label for="email-id">Email ID</label> -->
+                    <input type="email" name="email" id="email-id" placeholder="Email">
+                </div>
+                <div class="contact-name pop-input">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" name="text" id="" placeholder="Youtube Channel Name">
+                </div>
+                <div class="contact-link pop-input">
+                    <!-- <label for="link">Name</label> -->
+                    <input type="text" name="text" id="link" placeholder="Youtube Channel Link">
+                </div>
+                <div class="contact-message pop-input">
+                    <!-- <label for="email-id">Email ID</label> -->
+                    <textarea name="message" id="contact-message" placeholder="Message"></textarea>
+                </div>
+                <input class="btn" type="button" value="Submit">
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-bg">
+            <div class="nav-left">
+                    <img src="/logo-icon.png" alt="Panther Logo">
+                    <a href="/index.html">Panther <Span>Pixel</Span></a>
+
+            </div>
+            <div class="footer-mid">
+                <div class="menu-links">
+                    <a href="/index.html" class="footer-menu">Home</a>
+                    <a href="#services" class="footer-menu">Services</a>
+                    <a href="/Portfolio/portfolio.html" class="footer-menu">Portfolio</a>
+                    <a href="#pricing" class="footer-menu">Pricing</a>
+                    <a href="/Testmonial-Page/testmonial.html" class="footer-menu">Testimonials</a>
+
+                </div>
+                <div class="usefull-links">
+                    <a href="#" class="links">About Us</a>
+                    <a href="/Other-Pages/privacy-policy.html" class="links">Privacy Policy</a>
+                    <a href="/Other-Pages/tac.html" class="links">Terms and Condition</a>
+                    <a href="/Other-Pages/faq.html" class="links">FaQ's</a>
+                </div>
+            </div>
+            
+            <div class="footer-right contact-us">
+                <h1>Contact Us</h1>
+                <div class="contact-form">
+                    <div class="contact-name contact-input">
+                        <!-- <label for="name">Name</label> -->
+                        <input type="text" name="text" id="name" placeholder="Name">
+                    </div>
+                    <div class="contact-email contact-input">
+                        <!-- <label for="email-id">Email ID</label> -->
+                        <input type="email" name="email" id="email-id" placeholder="Email">
+                    </div>
+                    <div class="contact-message contact-input">
+                        <!-- <label for="email-id">Email ID</label> -->
+                        <textarea name="message" id="contact-message" placeholder="Message"></textarea>
+                    </div>
+                    <input class="btn" type="button" value="Submit">
+                </div>
+            </div>
+            </div>
+
+        </footer>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js" integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js" integrity="sha512-P2IDYZfqSwjcSjX0BKeNhwRUH8zRPGlgcWl5n6gBLzdi4Y5/0O4zaXrtO4K9TZK6Hn1BenYpKowuCavNandERg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+</html>
