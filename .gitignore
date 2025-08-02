@@ -1,3 +1,6 @@
-Hospital-Demo-Website/
-Panther-Pixel/
-Fitness-Expert/
+# Ignore completed local-only projects
+/HTML-CSS/Fitness-Expert/
+/HTML-CSS/Fylla/
+/HTML-CSS/Portfolio/
+/HTML-CSS/Arik/
+SidcupFamily/
