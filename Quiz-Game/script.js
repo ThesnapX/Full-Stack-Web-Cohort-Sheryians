@@ -165,7 +165,7 @@ function showResults() {
     resultMessage.textContent = "Good Effort! Keep learning!";
   } else if (percentage >= 40) {
     resultMessage.textContent = "Not bad! Try again to improve!";
-  } else if (percentage >= 100) {
+  } else if (percentage >= 20) {
     resultMessage.textContent = "Keep studing! You'll get better!";
   }
 }
