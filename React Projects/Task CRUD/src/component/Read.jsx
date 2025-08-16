@@ -1,9 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import { toast } from "react-toastify";
+import { taskContext } from "../wrapper";
 
-const Read = (props) => {
-  const taskList = props.taskList;
-  const settaskList = props.settaskList;
+const Read = () => {
+  const [taskList, settaskList] =  useContext(taskContext)
 
   // const completed = props.completed
   // const setcompleted = props.setcompleted

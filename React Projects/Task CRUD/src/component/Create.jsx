@@ -3,13 +3,11 @@ import { nanoid } from "nanoid";
 // import { useState } from "react";
 import { toast } from 'react-toastify';
 import { useForm } from "react-hook-form";
+import { useContext } from "react";
+import { taskContext } from "../wrapper";
 
-const Create = (props) => {
-  const taskList = props.taskList;
-  const settaskList = props.settaskList;
-  //   const completed = props.completed;
-  //   const setcompleted = props.setcompleted;
-  //   const [title, settitle] = useState("");
+const Create = () => {
+  const [taskList, settaskList] =  useContext(taskContext)
   const {
     register,
     handleSubmit,
