@@ -1,16 +1,17 @@
-# React + Vite
+# Dice Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 **Live Deployment:** <a href="https://react-dice-game-basic.netlify.app" target="_blank">Dice Game</a>  
+🎨 **Website Design:** <a href="https://www.figma.com/file/rephrU2FVgN8MFz6XhnP51/Learn-React-with-10-Projects?type=design&node-id=21-179&t=50BY0wCDLddg3TCC-0" target="_blank">Figma Design Reference</a>  
+📺 **Tutorial Followed:** <a href="https://www.youtube.com/watch?v=DY9LK7mq86s&t=3374s" target="_blank">YouTube Tutorial</a>  
+🎓 **For more information on the course, visit:** <a href="https://sheryians.com/" target="_blank">Sheryians Coding School</a>
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<ul>
+    <li>React</li>
+    <li>JavaScript</li>
+</ul>
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Feel free to explore the project and provide feedback! 🎲😊
