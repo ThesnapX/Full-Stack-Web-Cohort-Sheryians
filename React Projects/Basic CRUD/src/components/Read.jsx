@@ -14,10 +14,11 @@ const Read = ({
       {taskList.map((value) => {
         return (
           <div
-            onClick={() => {
-              setSelectedTask(value);
-              setShowUpdate(true);
-            }}
+            // Functnality for card click edit
+            // onClick={() => {
+            //   setSelectedTask(value);
+            //   setShowUpdate(true);
+            // }}
             key={value.id}
             className="border border-gray-300 p-4 mt-4 w-full flex items-center justify-between
                   hover:bg-[#414141]/40
